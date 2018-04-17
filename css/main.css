@@ -162,7 +162,7 @@ header p {
 }
 
 .map {
-  background: url('../images/map.png');
+  background: url('../images/map1-01.png');
   background-size: cover;
   height: 30em;
   margin-top: -45rem;
@@ -200,7 +200,7 @@ header p {
 }
 
 .trip-suggestions .left-content .image {
-  background: url('../images/sand.jpg');
+  background: url('../images/stone-01.png');
   background-size: cover;
   background-position: center;
   width: 13rem;
@@ -210,6 +210,10 @@ header p {
   margin-top: 1rem;
 }
 
+#logo {
+  width: 80%;
+  margin-top: .3rem;
+}
 
 .card {
     margin: 2em 1rem;
@@ -317,10 +321,39 @@ header p {
     margin-bottom: .5em;
 }
 
-.review-content img {
+.review-content img, .review-content .img {
     width: 9em;
     height: 9em;
     border-radius: 50%;
+   
+}
+
+#beh1 {
+  background: url('../images/beh1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.fa {
+  cursor: pointer;
+}
+
+#beh2 {
+  background: url('../images/fotbad.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#beh3 {
+  background: url('../images/beh.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+#beh4 {
+  background: url('../images/wax.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .info-text {
@@ -366,6 +399,10 @@ header p {
 
 #footer #contact-content i {
     margin-left: .5em;
+}
+
+.footer-title a{
+  display: inline-block;
 }
 
 .fa {
