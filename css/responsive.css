@@ -1,0 +1,215 @@
+@media screen and (min-width: 350px) { 
+  #logo-container {
+    display: block;
+  }
+
+  .navbar>.container-fluid .navbar-brand {
+    margin-left: 5.5em; 
+  }
+}
+
+@media screen and (min-width: 480px) {
+    header {
+        height: 45em;
+    }
+    .main .header-content {
+      padding: 1 4rem 5.5rem;
+      max-width: 33rem;
+    }
+    .content-header {
+        padding: 4em 3em 5em 3em;
+    }
+    #book .content-header {
+        padding: 3.5em 1em 3em 1em;
+    }
+    .info-text {
+        margin-left: 11em;
+    }
+    .info-image {
+        float: left;
+        padding: 1em;
+    }
+    .info-container {
+        margin: 1em 0;
+    }
+    #contact-id {
+        padding-bottom: 2em;
+    }
+    .links {
+        display: flex;
+        justify-content: space-around;
+    }
+    .card {
+      width: 70%;
+      margin: 2rem auto;
+    }
+}
+
+@media screen and (min-width: 765px) {
+    .content-header {
+        padding: 4em 7em 5em 7em;
+    }
+    .tabs {
+        display: flex;
+        justify-content: center;
+    }
+    .tabs button {
+        margin: 0 0.5em;
+    }
+
+    #contact-section {
+        padding: 1em 0 6em 0px;
+    }
+    .header-content h1{
+      font-size: 3.5rem; 
+    }
+
+    .card-destinations {
+      display: flex;
+      align-items: center;
+      -webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+      clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+    }
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 80%;
+      max-width: 1000px;
+      justify-content: center;
+      margin: auto;
+  }
+  .card {
+    border: 1px solid #e7e7e7;
+    width: 42%;
+    padding: 0 0 2em 0;
+    /* margin: 2em auto; */
+    transition: all .4s;
+}
+}
+
+@media screen and (min-width: 850px) {
+    header p {
+        /*padding: 0.5em 0 0 0;*/
+    }
+    .header-content {
+        /*width: 60%;*/
+        text-align: left;
+    }
+    .button-container {
+        /*width: 60%;*/
+        text-align: left;
+        padding: 0 1em;
+        margin: auto;
+    }
+    #stories, .trip-suggestions {
+        width: 60%;
+        margin: auto;
+    }
+    #parallax {
+        height: 30em;
+    }
+    #offers {
+        padding: 0 2em;
+        text-align: left;
+    }
+    #offers h3 {
+        margin-top: 0;
+    }
+    .card-info {
+        padding: 0 1em;
+    }
+    
+    .card-destinations {
+        height: 70rem;
+       
+    }
+    .form-group {
+        width: 40%;
+    }
+    .about-content img {
+        width: 20em;
+    }
+    .trip-suggestions {
+        display: flex;
+        margin: auto;
+    }
+    #footer {
+      padding: 0  1.5rem;
+  }
+    #footer-container {
+        width: 100%;
+        margin: auto;
+    }
+    .footer-title {
+      display: flex;
+      align-items: center;
+    }
+    .footer-title small {
+      margin-left: auto;
+    }
+    .footer-title h3 {
+      margin-right: 3rem !important;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    #stories {
+        display: flex;
+        width: 80%;
+    }
+    .trip-suggestions {
+      width: 80%;
+    }
+    .header-padding {
+        padding: 7em 10em 6em 10em;
+    }
+    
+    .card {
+        width: 30rem;
+        /*margin: 2em;*/
+    }
+}
+
+@media screen and (min-width: 1250px) {
+    .form-group {
+        width: 25%;
+    }
+   
+    .review-content {
+        padding: 3em 3em 7em 3em;
+    }
+    #contact-section {
+        padding: 1em 0 9em 0px;
+    }
+    .trip-suggestions {
+        /*width: 70%;*/
+        max-width: 1000px;
+    }
+    #stories, .trip-suggestions  { 
+      max-width: 1000px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .header-content {
+        /*width: 40%;*/
+    }
+    .button-container {
+        /*width: 40%;*/
+    }
+    #stories {
+        /* width: 60%; */
+      
+        margin: auto;
+    }
+    #footer-container {
+        /* width: 45%; */
+        max-width: 1000px;
+    }
+    .trip-suggestions {
+        /* width: 70%; */
+    }
+    .card-container {
+        /*width: 60%;*/
+    }
+}
