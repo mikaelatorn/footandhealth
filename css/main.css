@@ -2,9 +2,15 @@
     box-sizing: border-box;
 }
 
+html {
+  /* overflow-x: hidden; */
+}
+
 body {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
+    
+    box-sizing: border-box;
 }
 
 h1 {
@@ -109,10 +115,22 @@ header {
     margin-top: 3.5em;
     display: flex;
     align-items: center;
-    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 85%);
-    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 85%);
+    /* -webkit-clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 85%);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 85%); */
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% 100%,
+      0 calc(100% - 6vw)
+    );
+    -webkit-clip-path: polygon(0 0,
+    100% 0,
+    100% 100%,
+    0 calc(100% - 6vw));
     justify-content: center;
 }
+
+
 
 .header-content {
     /* margin: auto; */
@@ -168,14 +186,45 @@ header p {
   margin-top: -45rem;
   z-index: 1;
   /* margin-top: 3.5em; */
-  -webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
-    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+  /* -webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+    clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%); */
+    clip-path: polygon(
+      0 0,
+      100% 6vw,
+      100% 100%,
+      0 calc(100% - 6vw)
+    );
+    -webkit-clip-path: polygon(0 0,
+    100% 6vw,
+    100% 100%,
+    0 calc(100% - 6vw));
 }
+
+
+
+/* .card-destinations .card-container, .content-header, #stories {
+  transform:rotate(-2.5deg);
+} */
 
 .content-header {
     padding: 1.5em 1em 2em 1em;
     margin: auto;
     text-align: center;
+}
+
+.review-content {
+  /* -webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+  clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%); */
+  clip-path: polygon(
+    0 0,
+    100% 6vw,
+    100% 100%,
+    0 calc(100% - 6vw)
+  );
+  -webkit-clip-path: polygon(0 0,
+  100% 6vw,
+  100% 100%,
+  0 calc(100% - 6vw));
 }
 
 .button-primary {
@@ -296,6 +345,16 @@ header p {
 .card-destinations {
     background-color: #D3B4BD;
    padding: 2rem 0;
+   clip-path: polygon(
+    0 0,
+    100% 6vw,
+    100% 100%,
+    0 calc(100% - 6vw)
+  );
+  -webkit-clip-path: polygon(0 0,
+  100% 6vw,
+  100% 100%,
+  0 calc(100% - 6vw));
 }
 
 .about-content img {
@@ -308,13 +367,13 @@ header p {
 }
 
 .review-content {
-    /*background-color: #f1f1f1;*/
+    /* background-color: #f1f1f1; */
     text-align: left;
     padding: 3em;
 }
 
 .about-content {
-  padding: 3rem;
+  padding: 3rem 3rem 7rem;
 }
 
 .review-content h3 {

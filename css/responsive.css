@@ -67,9 +67,14 @@
     .card-destinations {
       display: flex;
       align-items: center;
-      -webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
-      clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+      /* -webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+      clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%); */
+ 
     }
+    
+
+
+   
     .card-container {
       display: flex;
       flex-wrap: wrap;
@@ -78,13 +83,17 @@
       justify-content: center;
       margin: auto;
   }
-  .card {
-    border: 1px solid #e7e7e7;
-    width: 42%;
-    padding: 0 0 2em 0;
-    /* margin: 2em auto; */
-    transition: all .4s;
-}
+    .card {
+      /* border: 1px solid #e7e7e7; */
+      width: 42%;
+      padding: 0;
+      /* margin: 2em auto; */
+      transition: all .4s;
+  }
+  .card-destinations {
+    height: 75rem;
+  
+  }
 }
 
 @media screen and (min-width: 850px) {
@@ -119,10 +128,7 @@
         padding: 0 1em;
     }
     
-    .card-destinations {
-        height: 70rem;
-       
-    }
+   
     .form-group {
         width: 40%;
     }
@@ -165,7 +171,7 @@
     }
     
     .card {
-        width: 30rem;
+        width: 37rem;
         /*margin: 2em;*/
     }
 }
