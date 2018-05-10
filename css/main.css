@@ -89,14 +89,18 @@ footer {
 
 #logo-container {
     margin-left: 1em;
-    height: 5em;
+    height: 5.5em;
     width: 6em;
     position: fixed;
     background-color: #474448;
     z-index: 2000000;
-    border-radius: 0.2em;
+    border-radius: 0 0 0.2em 0.2em;
     box-shadow: 0px 2px 5px #232323;
     display: none;
+    background-image: url('../images/stone-01.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 svg {
@@ -109,10 +113,10 @@ svg {
 
 
 header {
-    background: url('../images/water-01.png');
+    background: url('../images/small.png');
     background-size: cover;
     background-position: bottom;
-    height: 30em;
+    height: 35em;
     margin-top: 3.5em;
     display: flex;
     align-items: center;
@@ -151,13 +155,22 @@ header {
 .header-content h4 {
   margin-top: 3.5rem;
 }
-.header-content h1, .header-content h2 {
+
+.head-content {
+  position: relative;
+}
+
+.head-content h4 {
+  margin-top: 3rem;
+}
+
+.header-content h1, .header-content h2, .head-content h2 {
   position: relative;
   text-align: center !important;
   
 }
 
-.header-content h1:after,.header-content h2:after {
+.header-content h1:after,.header-content h2:after, .head-content h2:after {
     content:' ';
     position: absolute;
     top: 130%;
@@ -176,7 +189,10 @@ header {
 }
 
 
-
+.wrap {
+  background-image: url('../images/patterns-01.png');
+  /* background-size: contain; */
+}
 header p {
     color: #fff;
     /*padding: 1em .5em 0 .5em;*/
@@ -195,12 +211,12 @@ header p {
       0 0,
       100% 6vw,
       100% 100%,
-      0 calc(100% - 6vw)
+      0 100%
     );
     -webkit-clip-path: polygon(0 0,
     100% 6vw,
     100% 100%,
-    0 calc(100% - 6vw));
+    0 100%);
 }
 
 
@@ -213,6 +229,7 @@ header p {
     padding: 1.5em 1em 2em 1em;
     margin: auto;
     text-align: center;
+    
 }
 
 .review-content {
@@ -242,6 +259,7 @@ header p {
 
 .button-secondary {
     background-color: #3dbac4;
+    border: 2px solid #3dbac4;
     color: #fff;
 }
 
@@ -252,18 +270,23 @@ header p {
 }
 
 .trip-suggestions .left-content .image {
-  background: url('../images/stone-01.png');
+  background: url('../images/stol.jpg');
   background-size: cover;
   background-position: center;
-  width: 13rem;
-  height: 13rem;
+  width: 20rem;
+  height: 20rem;
   border-radius: 50%;
   margin: auto;
   margin-top: 1rem;
+  
+}
+
+.trip-suggestions p {
+  margin-bottom: 3rem;
 }
 
 #logo {
-  width: 80%;
+  width: 75%;
   margin-top: .3rem;
 }
 
@@ -343,10 +366,31 @@ header p {
     padding: 5rem 0 6rem 0;
     /* -webkit-clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
     clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%); */
+    clip-path: polygon(
+    0 0,
+    100% 6vw,
+    100% 100%,
+    0 calc(100% - 6vw)
+  );
+  -webkit-clip-path: polygon(0 0,
+  100% 6vw,
+  100% 100%,
+  0 calc(100% - 6vw));
+  
+}
+
+.card-body a {
+  
+    display: inline-block;
+    font-size: 20px;
+    margin: 0 .4rem;
+  
 }
 
 .card-destinations {
     background-color: #aeecf1;
+    
+    background-size: contain;
    padding: 2rem 0;
    clip-path: polygon(
     0 0,
@@ -371,12 +415,23 @@ header p {
 
 .review-content {
     /* background-color: #f1f1f1; */
+    
+    clip-path: polygon(
+    0 0,
+    100% 6vw,
+    100% 100%,
+    0 calc(100% - 6vw)
+  );
+  -webkit-clip-path: polygon(0 0,
+  100% 6vw,
+  100% 100%,
+  0 calc(100% - 6vw));
     text-align: left;
     padding: 3em;
 }
 
 .about-content {
-  padding: 3rem 3rem 7rem;
+  /* padding: 3rem 3rem 7rem; */
 }
 
 .review-content h3 {
