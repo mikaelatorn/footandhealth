@@ -43,6 +43,13 @@
     }
 }
 
+@media screen and (min-width: 600px) { 
+  .card {
+    width: 60%;
+    margin: 6rem auto;
+  }
+}
+
 @media screen and (min-width: 765px) {
     .content-header {
         padding: 4em 7em 5em 7em;
@@ -73,14 +80,7 @@
 
 
    
-    .card-container {
-      display: flex;
-      flex-wrap: wrap;
-      width: 80%;
-      max-width: 1000px;
-      justify-content: center;
-      margin: auto;
-  }
+    
     .card {
       /* border: 1px solid #e7e7e7; */
       width: 42%;
@@ -100,6 +100,7 @@
 }
 
 @media screen and (min-width: 850px) {
+ 
     header p {
         /*padding: 0.5em 0 0 0;*/
     }
@@ -149,6 +150,9 @@
         width: 100%;
         margin: auto;
     }
+    .card-container {
+      margin: 5rem;
+    }
     .footer-title {
       display: flex;
       align-items: center;
@@ -166,6 +170,16 @@
         display: flex;
         width: 80%;
     }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 80%;
+      max-width: 1000px;
+      justify-content: center;
+      margin: auto;
+
+  }
     .trip-suggestions {
       width: 80%;
     }
@@ -175,6 +189,7 @@
     
     .card {
         width: 37rem;
+        
         /*margin: 2em;*/
     }
 
